@@ -1,0 +1,5 @@
+from string import Template
+Student = [('Samuel',96), ('Ramesh',81), ('Jerry',85)]
+t = Template("Hi $name, you have gotten $marks marks in total")
+for i in Student:
+     print (t.substitute(name = i[0], marks = i[1]))
